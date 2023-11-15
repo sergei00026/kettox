@@ -736,7 +736,7 @@
 		}
 		> img {
 			position: relative;
-			z-index: 2;
+			z-index: 4;
 			vertical-align: middle;
 		}
 	}
@@ -1000,13 +1000,14 @@
 }
 //=========
 .popupTime {
+	display: none;
 	position: fixed;
 	z-index: 10;
 	top: 10px;
 	right: 10px;
 	width: 402px;
 	padding: 19px 64px 24px 41px;
-	display: flex;
+	// display: flex;
 	align-items: center;
 	gap: 17px;
 	border-radius: 32px;

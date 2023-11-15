@@ -52,31 +52,31 @@ document.addEventListener('DOMContentLoaded', function () {
 	updateTimer() //
 })
 
-window.addEventListener('mouseout', function (event) {
-	if (
-		event.clientY <= 0 ||
-		event.clientX <= 0 ||
-		event.clientX >= window.innerWidth ||
-		event.clientY >= window.innerHeight
-	) {
-		showPopup()
-	}
-})
+// window.addEventListener('mouseout', function (event) {
+// 	if (
+// 		event.clientY <= 0 ||
+// 		event.clientX <= 0 ||
+// 		event.clientX >= window.innerWidth ||
+// 		event.clientY >= window.innerHeight
+// 	) {
+// 		showPopup()
+// 	}
+// })
 
-function showPopup() {
-	const popup = document.querySelector('#popup')
-	popup.classList.add('popup_show')
-	document.documentElement.classList.add('popup-show')
-}
+// function showPopup() {
+// 	const popup = document.querySelector('#popup')
+// 	popup.classList.add('popup_show')
+// 	document.documentElement.classList.add('popup-show')
+// }
 
-const popup = document.querySelector('#popup')
-popup.addEventListener('click', function (e) {
-	if (e.target.className === 'popup__wrapper') {
-		const popupUp = document.querySelector('#popup')
-		popupUp.classList.remove('popup_show')
-		document.documentElement.classList.remove('popup-show')
-	}
-})
+// const popup = document.querySelector('#popup')
+// popup.addEventListener('click', function (e) {
+// 	if (e.target.className === 'popup__wrapper') {
+// 		const popupUp = document.querySelector('#popup')
+// 		popupUp.classList.remove('popup_show')
+// 		document.documentElement.classList.remove('popup-show')
+// 	}
+// })
 
 const popups = [
 	{
@@ -114,7 +114,6 @@ const popups = [
 		title: 'Ольга М. только что совершила покупку на сумму 5 600 руб.',
 		content: '',
 		img: `
-		
 <circle cx="28" cy="28" r="27" stroke="white" stroke-width="2"/>
 <path d="M25.0722 41.9845C23.5349 41.9845 22.2841 40.7337 22.2841 39.1963C22.2841 37.6589 23.5349 36.4086 25.0722 36.4086C26.6096 36.4086 27.8604 37.6589 27.8604 39.1963C27.8604 40.7337 26.6096 41.9845 25.0722 41.9845ZM25.0722 38.1586C24.5 38.1586 24.0341 38.6241 24.0341 39.1963C24.0341 39.769 24.4996 40.2345 25.0722 40.2345C25.6449 40.2345 26.1104 39.769 26.1104 39.1963C26.1104 38.6241 25.6449 38.1586 25.0722 38.1586Z" fill="white"/>
 <path d="M34.7647 41.9845C33.2273 41.9845 31.9769 40.7337 31.9769 39.1963C31.9769 37.6589 33.2273 36.4086 34.7647 36.4086C36.3021 36.4086 37.5529 37.6589 37.5529 39.1963C37.5529 40.7337 36.3016 41.9845 34.7647 41.9845ZM34.7647 38.1586C34.1924 38.1586 33.7269 38.6241 33.7269 39.1963C33.7269 39.769 34.1924 40.2345 34.7647 40.2345C35.3374 40.2345 35.8029 39.769 35.8029 39.1963C35.8029 38.6241 35.3369 38.1586 34.7647 38.1586Z" fill="white"/>
@@ -122,6 +121,7 @@ const popups = [
 		`,
 	},
 ]
+
 let timeout
 // Функция для закрытия всплывающего окна
 const popupTimeButton = document.querySelector('.popupTime button')
@@ -155,6 +155,8 @@ function showRandomPopup() {
 }
 
 // Проверка на мобильную версию
-if (window.innerWidth > 480) {
+if (window.innerWidth > 600) {
 	showRandomPopup()
 }
+
+console.log(window.innerWidth)
