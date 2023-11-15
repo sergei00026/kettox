@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+
+
+		<div class="popupTime">
+			<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+				<circle cx="28" cy="28" r="27" stroke="white" stroke-width="2" />
+				<path
+					d="M36.6999 27.6812C39.5696 25.1014 39.8046 20.6838 37.2248 17.8141C34.8587 15.1821 30.8983 14.735 28.005 16.7732C24.8509 14.5473 20.4895 15.2997 18.2636 18.4537C16.2211 21.3478 16.6664 25.3123 19.3 27.6812C16.0276 29.4062 13.9853 32.807 14.0001 36.5061V39.5061C14.0001 40.0584 14.4478 40.5061 15.0001 40.5061H40.9999C41.5522 40.5061 42 40.0584 42 39.5061V36.5061C42.0147 32.807 39.9723 29.4062 36.6999 27.6812ZM31.9999 17.5062C34.7575 17.5032 36.9954 19.7361 36.9985 22.4937C37.0007 24.4603 35.8482 26.245 34.0549 27.0522C33.9779 27.0872 33.9009 27.1191 33.823 27.1522C33.5762 27.2517 33.3216 27.331 33.0619 27.3892C33.012 27.4002 32.9619 27.4062 32.9109 27.4162C32.6208 27.4718 32.3264 27.5016 32.0309 27.5052C31.8979 27.5052 31.7639 27.4952 31.6309 27.4832C31.5809 27.4832 31.5309 27.4832 31.4809 27.4732C30.9126 27.4063 30.3597 27.2434 29.8459 26.9912C29.8269 26.9822 29.8049 26.9832 29.7859 26.9752C29.6859 26.9273 29.5859 26.8852 29.4969 26.8312C29.505 26.8212 29.5099 26.8102 29.5179 26.8002C29.9765 26.211 30.338 25.5524 30.5889 24.8492L30.6199 24.7652C30.734 24.4294 30.8226 24.0854 30.8849 23.7362C30.8939 23.6852 30.9009 23.6362 30.9089 23.5812C30.9668 23.2257 30.9972 22.8664 30.9999 22.5062C30.997 22.1467 30.9666 21.788 30.9089 21.4332C30.9009 21.3812 30.8939 21.3332 30.8849 21.2782C30.8226 20.929 30.734 20.585 30.6199 20.2492L30.5889 20.1652C30.338 19.462 29.9764 18.8034 29.5179 18.2142C29.5099 18.2042 29.5049 18.1932 29.4969 18.1832C30.2567 17.74 31.1204 17.5063 31.9999 17.5062ZM19 22.5063C18.9929 19.752 21.2199 17.5135 23.9742 17.5064C25.2652 17.5031 26.5073 18.0006 27.439 18.8943C27.497 18.9503 27.554 19.0062 27.61 19.0642C27.7817 19.2442 27.9401 19.4364 28.084 19.6392C28.128 19.7012 28.168 19.7672 28.209 19.8312C28.3487 20.0463 28.4714 20.272 28.576 20.5062C28.601 20.5632 28.62 20.6212 28.6419 20.6782C28.7474 20.9372 28.8303 21.2049 28.89 21.4782C28.897 21.5082 28.899 21.5382 28.905 21.5692C29.0316 22.1901 29.0316 22.8302 28.905 23.4511C28.899 23.4821 28.8969 23.5121 28.89 23.5421C28.8304 23.8154 28.7474 24.0831 28.6419 24.3421C28.62 24.3991 28.6009 24.4571 28.576 24.5141C28.4713 24.7479 28.3486 24.9733 28.209 25.1881C28.168 25.2521 28.128 25.3181 28.084 25.3801C27.9402 25.583 27.7817 25.7751 27.61 25.9551C27.554 26.0131 27.497 26.0691 27.439 26.125C27.0341 26.5109 26.5673 26.8259 26.058 27.057C25.9771 27.094 25.895 27.1281 25.8121 27.1571C25.571 27.2527 25.323 27.3296 25.0701 27.387C25.0071 27.401 24.9421 27.409 24.8781 27.42C24.6066 27.4706 24.3312 27.4983 24.0551 27.5031H23.9451C23.6689 27.4984 23.3936 27.4706 23.1221 27.42C23.0581 27.409 22.9931 27.401 22.9301 27.387C22.6772 27.3296 22.4291 27.2527 22.1881 27.1571C22.1051 27.1241 22.0231 27.0901 21.9421 27.057C20.153 26.2493 19.0023 24.4692 19 22.5063ZM31.9999 38.5061H16.0001V36.5062C15.9854 33.1175 18.1204 30.0921 21.318 28.9702C23.0345 29.6849 24.9654 29.6849 26.682 28.9702C27.0159 29.0922 27.3412 29.2362 27.656 29.4012C27.864 29.5082 28.056 29.6302 28.256 29.7532C28.386 29.8342 28.518 29.9132 28.643 30.0022C28.836 30.1392 29.018 30.2882 29.197 30.4412C29.312 30.5412 29.426 30.6412 29.534 30.7412C29.699 30.8972 29.8539 31.0622 30.003 31.2312C30.1099 31.3532 30.2139 31.4772 30.313 31.6052C30.444 31.7732 30.569 31.9453 30.685 32.1222C30.785 32.2722 30.874 32.4282 30.9619 32.5842C31.062 32.7562 31.154 32.9282 31.2379 33.1072C31.3219 33.2862 31.396 33.4822 31.4679 33.6732C31.5309 33.8392 31.5979 34.0042 31.6499 34.1732C31.7199 34.4052 31.7689 34.6452 31.8179 34.8852C31.8479 35.0272 31.8869 35.1662 31.9089 35.3102C31.9681 35.7061 31.9985 36.1058 31.9999 36.5062L31.9999 38.5061ZM39.9999 38.5061H34V36.5062C34 36.1932 33.982 35.8831 33.954 35.5762C33.9459 35.4862 33.932 35.3972 33.922 35.3072C33.895 35.0862 33.864 34.8672 33.822 34.6502C33.804 34.5575 33.785 34.4645 33.7649 34.3711C33.717 34.1485 33.6613 33.9278 33.598 33.7092C33.577 33.6371 33.5579 33.5641 33.536 33.4932C33.2559 32.598 32.8502 31.7473 32.331 30.9662L32.292 30.9092C32.12 30.6539 31.9363 30.4069 31.7409 30.1682L31.734 30.1592C31.534 29.9112 31.317 29.6702 31.089 29.4422C31.102 29.4422 31.116 29.4422 31.13 29.4422C31.4122 29.4793 31.6964 29.4993 31.981 29.5022H32.036C32.2995 29.4999 32.5625 29.4829 32.824 29.4512C32.906 29.4412 32.9871 29.4262 33.069 29.4132C33.2817 29.3806 33.4917 29.3382 33.699 29.2862C33.758 29.2712 33.818 29.2572 33.878 29.2402C34.1501 29.1662 34.4173 29.0753 34.678 28.9682C37.8779 30.089 40.0149 33.1158 40 36.5062V38.5061H39.9999Z"
+					fill="white" />
+
+			</svg>
+			<div class="popupTime__block">
+				<div class="popupTime__desc">Количество посетителей на сайте:</div>
+				<div class="popupTime__num">172</div>
+			</div>
+			<button>
+				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+					<path
+						d="M17.1212 18.0001C17.295 18.0001 17.465 17.9486 17.6096 17.852C17.7541 17.7555 17.8668 17.6182 17.9333 17.4576C17.9999 17.297 18.0173 17.1202 17.9833 16.9497C17.9494 16.7792 17.8657 16.6226 17.7427 16.4996L1.50055 0.25746C1.3357 0.092611 1.11212 0 0.878986 0C0.645855 0 0.422272 0.092611 0.257423 0.25746C0.0925751 0.422308 -3.62396e-05 0.645891 -3.62396e-05 0.879022C-3.62396e-05 1.11215 0.0925751 1.33574 0.257423 1.50058L16.4996 17.7428C16.5812 17.8245 16.6781 17.8893 16.7847 17.9335C16.8914 17.9776 17.0057 18.0003 17.1212 18.0001Z"
+						fill="white" />
+
+					<path
+						d="M0.87879 18.0001C0.994238 18.0003 1.10858 17.9776 1.21525 17.9335C1.32191 17.8893 1.4188 17.8245 1.50035 17.7428L17.7425 1.50058C17.9074 1.33574 18 1.11215 18 0.879022C18 0.645891 17.9074 0.422308 17.7425 0.25746C17.5777 0.092611 17.3541 0 17.121 0C16.8878 0 16.6643 0.092611 16.4994 0.25746L0.257229 16.4996C0.134277 16.6226 0.0505428 16.7792 0.0166168 16.9497C-0.0173092 17.1202 9.72748e-05 17.297 0.0666332 17.4576C0.133169 17.6182 0.245846 17.7555 0.390411 17.852C0.534977 17.9486 0.704935 18.0001 0.87879 18.0001Z"
+						fill="white" />
+
+				</svg>
+			</button>
+		</div>
+		<main class=" page">
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__body">
+						<div class="main__titleBlock">
+							<h1 class="main__title">KETTOX<sup>&#9415;</sup>– ЗАМЕНА КЕТО ДИЕТЫ И ПОХУДЕНИЕ БЕЗ МУЧЕНИЙ</h1>
+							<h3 class="main__subTitle">С новым средством KETTOX можно сжечь до 17 кг жира, не прибегая к
+								мучительной кето диете</h3>
+						</div>
+						<div class="main__img">
+							<img src="@img/main/kettox.png" alt="kettox">
+						</div>
+						<div class="main__card card">
+							<form class="card__body">
+								<div class="card__title">Акция действует только<br> на территории России и стран СНГ</div>
+								<div class="card__mobileTitle">Акция! Закажите KETTOX<br> прямо сейчас всего за 147 руб.
+								</div>
+								<div class="card__prices">
+									<div class="card__oldprice">
+										<div class="card__desc">Старая цена</div>
+										<div class="card__price">3889 руб</div>
+										<div class="card__priceMobile">3990 руб.</div>
+									</div>
+									<div class="card__newprice">
+										<div class="card__desc">Новая цена</div>
+										<div class="card__descMobile">Промо цена:</div>
+										<div class="card__price">142 руб</div>
+										<div class="card__priceMobile">147<sup>*</sup></div>
+
+									</div>
+								</div>
+								<label class="card__label">
+									<p>Введите вашем имя</p>
+									<input autocomplete="off" type="text" placeholder="Иванова И. И.">
+								</label>
+								<label class="card__label">
+									<p>Введите ваш телефон</p>
+									<input autocomplete="off" type="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+								</label>
+								<div class="card__deadline">Осталось всего 5 приборов на российском складе! НЕ УПУСТИ СВОЙ
+									ШАНС!
+								</div>
+								<div class="card__deadlineMobile">Осталось упаковок со cкидкой: <span>48</span> шт. </div>
+								<button data-popup="#popup" type="submit" class="card__btn">ЗАКАЗАТЬ KETTOX</button>
+								<div class="card__received">Уже получили на этой неделе: 297 чел.</div>
+								<div class="card__politicBlock">
+									<img src="@img/main/security-on.svg" alt="security">
+									<div class="card__politic">Мы не разглашаем Ваши личные данные и не передаем оставленную
+										Вами
+										информацию третьим лицам. * При заказе курса</div>
+								</div>
+							</form>
+						</div>
+						<div class="main__advantages advantages">
+							<img class="advantages__img" src="@img/main/advantages.png" alt="advantages">
+							<div class="advantages__body">
+								<div class="advantages__item">Вызывает состояние “кетоза” с первого применения </div>
+								<div class="advantages__item">Блокирует усвоение калорий из пищи</div>
+								<div class="advantages__item">Переключает организм на сжигание жира </div>
+								<div class="advantages__item">Без необходимости отказа от привычного питания</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__speed speed">
+				<div class="speed__container">
+					<h2 class="speed__title title">Как быстро Вы похудеете с помощью KETTOX?</h2>
+					<div class="speed__body">
+						<!-- Оболочка слайдера -->
+						<div class="speed__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<div class="speed__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="speed__slide swiper-slide">
+									<div class="speed__block">
+										<h4 class="speed__heading">1-2 НЕДЕЛЯ</h4>
+										<ul class="speed__list">
+											<li class="speed__item">Уходит 2-4 килограмма</li>
+											<li class="speed__item">Очищение организма от шлаков, необходимо пить много воды
+											</li>
+											<li class="speed__item">Снижается аппетит, уходит чувство голода</li>
+										</ul>
+										<div class="speed__img">
+											<img src="@img/speed/woman.png" alt="woman">
+											<button type="button" class="speed__button-prev"><img src="@img/speed/arrow.svg"
+													alt="arrow"></button>
+											<button type="button" class="speed__button-next"><img src="@img/speed/arrow.svg"
+													alt="arrow"></button>
+										</div>
+									</div>
+								</div>
+								<div class="speed__slide swiper-slide">
+									<div class="speed__block">
+										<h4 class="speed__heading">3-4 НЕДЕЛЯ</h4>
+										<ul class="speed__list">
+											<li class="speed__item">Потеря веса достигает 10 килограммов</li>
+											<li class="speed__item">Жир уходит из самых труднодоступных мест </li>
+											<li class="speed__item">Ваш метаболизм возвращается в нормальный темп</li>
+										</ul>
+										<div class="speed__img">
+											<img src="@img/speed/woman_2.png" alt="woman">
+											<button type="button" class="speed__button-prev"><img src="@img/speed/arrow.svg"
+													alt="arrow"></button>
+											<button type="button" class="speed__button-next"><img src="@img/speed/arrow.svg"
+													alt="arrow"></button>
+										</div>
+									</div>
+								</div>
+								<div class="speed__slide swiper-slide">
+									<div class="speed__block">
+										<h4 class="speed__heading">5-6 НЕДЕЛЯ</h4>
+										<ul class="speed__list">
+											<li class="speed__item">Общая потеря веса за курс от 13 до 17 кг и больше </li>
+											<li class="speed__item">Вы больше не переедаете, питаетесь правильно </li>
+											<li class="speed__item">Вес стабилизируется, жир не накапливается</li>
+										</ul>
+										<div class="speed__img">
+											<img src="@img/speed/woman_3.png" alt="woman">
+											<button type="button" class="speed__button-prev"><img src="@img/speed/arrow.svg"
+													alt="arrow"></button>
+											<button type="button" class="speed__button-next"><img src="@img/speed/arrow.svg"
+													alt="arrow"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__benefit benefit">
+				<div class="benefit__container">
+					<h2 class="benefit__title title title__white">KETTOX – научный подход к похудению</h2>
+					<p class="benefit__subtitle">Долгое время замены кето диете не было. И только в 2019 году было
+						запатентовано новое средство для похудения KETTOX с содержанием природных альфа-кетонов, которые
+						вызывают состояние кетоза без диет и голодания. Натуральная формула средства объединяет наиболее
+						богатые природные источники альфа-кетонов, действие которых превосходит эффект кето диеты на 40%.
+					</p>
+					<div class="benefit__body">
+						<div class="benefit__mango">
+							<div class="benefit__produscImg"><img src="@img/benefit/mango.png" alt="mango"></div>
+							<div class="benefit__blockText">
+								<div class="benefit__heading">Африканское манго</div>
+								<div class="benefit__desc">Поддерживает липидный обмен и нормализует сахар в крови</div>
+							</div>
+						</div>
+						<figure class="benefit__ketox">
+							<div class="benefit__img">
+								<img src="@img/benefit/kettox.png" alt="kettox">
+							</div>
+						</figure>
+						<div class="benefit__settimana">
+							<div class="benefit__blockText">
+								<div class="benefit__heading">Канадская голубика</div>
+								<div class="benefit__desc">эффективно проникает и расщепляет клетки “жировых депо”</div>
+							</div>
+							<div class="benefit__produscImg"><img src="@img/benefit/settimana.png" alt="settimana"></div>
+						</div>
+						<div class="benefit__gatu">
+							<div class="benefit__blockText">
+								<div class="benefit__heading">Готу кола </div>
+								<div class="benefit__desc">Ускоряет водно-солевой обмен, препятствует образованию целлюлита
+								</div>
+							</div>
+							<div class="benefit__produscImg"><img src="@img/benefit/gatu.png" alt="gatu"></div>
+						</div>
+						<div class="benefit__yasamy">
+							<div class="benefit__produscImg"><img src="@img/benefit/yasamy.png" alt="yasamy"></div>
+							<div class="benefit__blockText">
+								<div class="benefit__heading">Ягода асаи </div>
+								<div class="benefit__desc">Концентрат аминокислот и микроэлементов, улучшает состояние кожи,
+									волос, ногтей</div>
+							</div>
+						</div>
+						<div class="benefit__tamarind">
+							<div class="benefit__produscImg"><img src="@img/benefit/tamarind.png" alt="tamarind"></div>
+							<div class="benefit__blockText">
+								<div class="benefit__heading">Тамаринд</div>
+								<div class="benefit__desc">Содержит природные альфа-кетоны, ускоряет жиросжигание и
+									запускает кетоз</div>
+							</div>
+						</div>
+						<div class="benefit__hoodia">
+							<div class="benefit__blockText">
+								<div class="benefit__heading">Худия гордони</div>
+								<div class="benefit__desc">Содержит алканы и витамин Е, блокирует чувство голода</div>
+							</div>
+							<div class="benefit__produscImg"><img src="@img/benefit/Hoodia.png" alt="hoodia"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__body">
+						<div class="main__titleBlock">
+							<h1 class="main__title">KETTOX<sup>&#9415;</sup>– ЗАМЕНА КЕТО ДИЕТЫ И ПОХУДЕНИЕ БЕЗ МУЧЕНИЙ</h1>
+							<h3 class="main__subTitle">С новым средством KETTOX можно сжечь до 17 кг жира, не прибегая к
+								мучительной кето диете</h3>
+						</div>
+						<div class="main__img">
+							<img src="@img/main/kettox.png" alt="kettox">
+						</div>
+						<div class="main__card card">
+							<form class="card__body">
+								<div class="card__title">Акция действует только<br> на территории России и стран СНГ</div>
+								<div class="card__mobileTitle">Акция! Закажите KETTOX<br> прямо сейчас всего за 147 руб.
+								</div>
+								<div class="card__prices">
+									<div class="card__oldprice">
+										<div class="card__desc">Старая цена</div>
+										<div class="card__price">3889 руб</div>
+										<div class="card__priceMobile">3990 руб.</div>
+									</div>
+									<div class="card__newprice">
+										<div class="card__desc">Новая цена</div>
+										<div class="card__descMobile">Промо цена:</div>
+										<div class="card__price">142 руб</div>
+										<div class="card__priceMobile">147<sup>*</sup></div>
+
+									</div>
+								</div>
+								<label class="card__label">
+									<p>Введите вашем имя</p>
+									<input autocomplete="off" type="text" placeholder="Иванова И. И.">
+								</label>
+								<label class="card__label">
+									<p>Введите ваш телефон</p>
+									<input autocomplete="off" type="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+								</label>
+								<div class="card__deadline">Осталось всего 5 приборов на российском складе! НЕ УПУСТИ СВОЙ
+									ШАНС!
+								</div>
+								<div class="card__deadlineMobile">Осталось упаковок со cкидкой: <span>48</span> шт. </div>
+								<button data-popup="#popup" type="submit" class="card__btn">ЗАКАЗАТЬ KETTOX</button>
+								<div class="card__received">Уже получили на этой неделе: 297 чел.</div>
+								<div class="card__politicBlock">
+									<img src="@img/main/security-on.svg" alt="security">
+									<div class="card__politic">Мы не разглашаем Ваши личные данные и не передаем оставленную
+										Вами
+										информацию третьим лицам. * При заказе курса</div>
+								</div>
+							</form>
+						</div>
+						<div class="main__advantages advantages">
+							<img class="advantages__img" src="@img/main/advantages.png" alt="advantages">
+							<div class="advantages__body">
+								<div class="advantages__item">Вызывает состояние “кетоза” с первого применения </div>
+								<div class="advantages__item">Блокирует усвоение калорий из пищи</div>
+								<div class="advantages__item">Переключает организм на сжигание жира </div>
+								<div class="advantages__item">Без необходимости отказа от привычного питания</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
