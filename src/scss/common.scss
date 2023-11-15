@@ -734,7 +734,8 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
-		> img {
+		img,
+		source {
 			position: relative;
 			z-index: 4;
 			vertical-align: middle;
@@ -785,7 +786,8 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
-		& > img {
+		img,
+		source {
 			position: absolute;
 			top: 50%;
 			left: 50%;

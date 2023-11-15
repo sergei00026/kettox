@@ -930,7 +930,8 @@ body::after {
           transform: translate(-50%, -50%);
 }
 
-.benefit__produscImg > img {
+.benefit__produscImg img,
+.benefit__produscImg source {
   position: relative;
   z-index: 4;
   vertical-align: middle;
@@ -990,7 +991,8 @@ body::after {
           transform: translate(-50%, -50%);
 }
 
-.benefit__img > img {
+.benefit__img img,
+.benefit__img source {
   position: absolute;
   top: 50%;
   left: 50%;
