@@ -52,31 +52,31 @@ document.addEventListener('DOMContentLoaded', function () {
 	updateTimer() //
 })
 
-// window.addEventListener('mouseout', function (event) {
-// 	if (
-// 		event.clientY <= 0 ||
-// 		event.clientX <= 0 ||
-// 		event.clientX >= window.innerWidth ||
-// 		event.clientY >= window.innerHeight
-// 	) {
-// 		showPopup()
-// 	}
-// })
+window.addEventListener('mouseout', function (event) {
+	if (
+		event.clientY <= 0 ||
+		event.clientX <= 0 ||
+		event.clientX >= window.innerWidth ||
+		event.clientY >= window.innerHeight
+	) {
+		showPopup()
+	}
+})
 
-// function showPopup() {
-// 	const popup = document.querySelector('#popup')
-// 	popup.classList.add('popup_show')
-// 	document.documentElement.classList.add('popup-show')
-// }
+function showPopup() {
+	const popup = document.querySelector('#popup')
+	popup.classList.add('popup_show')
+	document.documentElement.classList.add('popup-show')
+}
 
-// const popup = document.querySelector('#popup')
-// popup.addEventListener('click', function (e) {
-// 	if (e.target.className === 'popup__wrapper') {
-// 		const popupUp = document.querySelector('#popup')
-// 		popupUp.classList.remove('popup_show')
-// 		document.documentElement.classList.remove('popup-show')
-// 	}
-// })
+const popup = document.querySelector('#popup')
+popup.addEventListener('click', function (e) {
+	if (e.target.className === 'popup__wrapper') {
+		const popupUp = document.querySelector('#popup')
+		popupUp.classList.remove('popup_show')
+		document.documentElement.classList.remove('popup-show')
+	}
+})
 
 const popups = [
 	{
